@@ -117,5 +117,11 @@ if ($cache == 0) { // No caching, because either configuration or one of the che
 *
 */
 if ($debug == 1 and isset($debugInfo)) {
-    print_r($debugInfo);
+    print_r($debugInfo . "<br />Used memory: " . memory_usage());
 }
+
+function memory_usage() {
+    $size = memory_get_peak_usage(true);
+    $unit = array('b','kb','mb','gb','tb','pb');
+    return @round($size/pow(1024,($i=floor(log($size,1024)))),2).' '.$unit[$i];
+ }
