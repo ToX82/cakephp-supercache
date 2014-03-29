@@ -19,6 +19,7 @@
 
 session_name('CAKEPHP');
 session_start();
+$timerStart = microtime(true);
 
 
 
@@ -117,7 +118,10 @@ if ($cache == 0) { // No caching, because either configuration or one of the che
 *
 */
 if ($debug == 1 and isset($debugInfo)) {
-    print_r($debugInfo . "<br />Used memory: " . memory_usage());
+    $timerEnd = microtime(true);
+    print($debugInfo);
+    print("<br />Used memory: " . memory_usage());
+    printf("<br />Page was generated in %f seconds", $timerEnd - $timerStart);
 }
 
 function memory_usage() {
