@@ -1,6 +1,7 @@
 # CakePHP-Supercache
 
 (almost) drop-in cahing engine for CakePHP I got the idea by a fantastic plugin by Matt Curry (https://github.com/mcurry/html_cache), but I wanted it to be even simpler to implement.
+
 This is the default caching system for [Pubblico CMS](http://emanuele.itoscano.com/vedi/64_pubblico-cms)
 
 
