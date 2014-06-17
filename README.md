@@ -9,6 +9,7 @@ This is the default caching system for [Pubblico CMS](http://emanuele.itoscano.c
 * create a new folder called "cache" in your app/webroot directory, with write permissions
 * rename app/webroot/index.php to app/webroot/index_cake.php
 * save this file to app/webroot. Yes, you're replacing the original file with this one
+* configure as you need
 * that's all folks!
 
 ## Contributing
